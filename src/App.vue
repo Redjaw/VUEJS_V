@@ -1,14 +1,14 @@
 <template>
-  <Menu />
+  <Running />
 </template>
 
 <script>
-import Menu from '@/components/Menu.vue'
+import Running from '@/components/Running.vue'
 
 export default {
   name: 'App',
   components: {
-    Menu
+    Running
   }
 }
 </script>
