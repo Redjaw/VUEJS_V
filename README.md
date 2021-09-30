@@ -11,7 +11,7 @@ L'applicazione dovrà prevedere:
 
 La lista delle corse e relative immagini sono presenti in assets/runningLog.json, le immagini nella cartella assets/maps.
 
-Come timer potete usare la funzione setInterval() e getSeconds().
+Come timer potete usare la funzione calculateTimer(seconds) che ritornerà minuti e secondi formattati.
 
 Potete utilizzare qualsiasi stile, il css di bootstrap è già incluso nel progetto.
 
