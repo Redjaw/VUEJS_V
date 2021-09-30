@@ -1,5 +1,6 @@
 <template>
-  <Running />
+  <List />
+  <Running :run=""/>
 </template>
 
 <script>
@@ -8,6 +9,7 @@ import Running from '@/components/Running.vue'
 export default {
   name: 'App',
   components: {
+    List,
     Running
   }
 }

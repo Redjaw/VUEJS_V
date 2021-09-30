@@ -4,9 +4,13 @@
 
 <script>
 import {ref} from 'vue'
+import Timer from '@/components/Timer'
 
 export default {
-  components: {},
+  name: 'running',
+  components: {
+    Timer
+  },
   setup(props) {
     
     return {}
