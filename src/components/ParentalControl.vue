@@ -1,13 +1,12 @@
 <template>
 	<div class="container">
-		Storico
+		I contenuti di questi commenti non sono moderati. L'utilizzo è vietato per i minori di 14 anni.
 	</div>
 </template>
 
 <script>
-import { createApp } from "vue";
 
-export default createApp({
-  name: "history"
+export default ({
+  name: "parental-control"
 });
 </script>

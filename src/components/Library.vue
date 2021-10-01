@@ -5,9 +5,8 @@
 </template>
 
 <script>
-import { createApp } from "vue";
 
-export default createApp({
+export default ({
   name: "library"
 });
 </script>
