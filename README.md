@@ -7,3 +7,6 @@ In questo repository troverete tutte le esercitazioni:
 - routing -> esercitazione con vue-router
 - rest -> esercitazione con axios e chiamate REST
 - store -> esercitazione con vuex e gestione dello store
+- typescript -> esercitazione sulla tipizzazione in vue
+- test -> esercitazione sul testing dei componenti con Jest
+- final -> esercitazione finale con uso delle best-practices
