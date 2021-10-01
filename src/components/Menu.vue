@@ -1,13 +1,12 @@
 <template>
 	<div class="container">
-  test
+  		test
 	</div>
 </template>
 
-<script lang="ts">
-import { createApp } from "vue";
+<script>
 
-export default createApp({
+export default ({
   name: "menu"
 });
 </script>
