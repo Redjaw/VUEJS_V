@@ -28,7 +28,10 @@ fastify.post('/api/stocks', async (request, reply) => {
 })
 
 fastify.get('/api/investors:name', async (request, reply) => {
-	if (request.query.name) return db.investors.filter(item => item.name === request.query.name)
+	if (request.query.name) {
+		if (request.query.name === 'test') reply.code(500).send('error')
+		else return db.investors.filter(item => item.name === request.query.name)
+	}
 	else return db.investors
 })
 

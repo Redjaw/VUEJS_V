@@ -10,13 +10,20 @@ export default ({
   data() {	
 	return{
 		myChart: {},
-		acme: [12, 19, 3, 5, 2, 3],
-		global: [78, 2, 4, 5, 6, 7]
+		acme: [],
+		global: []
 	}
   },
   mounted() {
 	Chart.register(...registerables)
-	this.createChart()
+	this.axios.get('stocks')
+		.then(response => {
+			this.acme = response.data.acme
+			this.global = response.data.global
+			this.createChart()
+		})
+		.catch(error=>console.log(error))
+	
   },
   methods: {
 	returnDays(daysNumber){

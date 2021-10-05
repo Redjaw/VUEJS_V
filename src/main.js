@@ -4,7 +4,7 @@ import '@/assets/bootstrap.min.css'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import interceptor from './axios.js'
+import interceptor from './interceptor.js'
 interceptor()
 
 createApp(App)
