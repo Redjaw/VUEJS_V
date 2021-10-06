@@ -1,4 +1,3 @@
-import { mount } from '@vue/test-utils'
 import ListComponent from '@/components/List.vue'
 
 describe('La pagina lista', () => {

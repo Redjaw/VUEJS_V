@@ -1,12 +1,13 @@
 <template>
+  <SelfDestructComponent></SelfDestructComponent>
   <router-view />
 </template>
 
 <script>
-
+import SelfDestructComponent from '@/components/SelfDestructComponent.vue'
 export default {
   name: 'App',
-  components: {}
+  components: {SelfDestructComponent}
 }
 </script>
 
