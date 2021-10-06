@@ -1,29 +1,36 @@
 <template>
 	<div class="coverContainer">
-		<div class="cover before">
-			<img src="@/assets/album/nevermind.png" /> 
-		</div>
-		<div class="cover before">
-			<img src="@/assets/album/dark-side-of-the-moon.png" /> 
-		</div>
-		<div class="cover selected ">
-			<img src="@/assets/album/a-night-at-the-opera.png" /> 
-		</div>
-		<div class="cover after">
-			<img src="@/assets/album/never-mind-the-bollocks.png" /> 
-		</div>
-		<div class="cover after">
-			<img src="@/assets/album/ramones.png" /> 
+		<div class="cover" :class="{'selected' : album === currentalbum, 'before' : album !== currentalbum}" v-for="(album, index) in albums" :key="index" @click="setSelection(album)">
+			<img :src="require('@/assets/album/'+album.cover)" />
 		</div>
 	</div>
 	
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent,PropType } from 'vue'
+import albumsJson from '@/assets/album.json'
+import {IAlbum} from './Album'
 
 export default defineComponent({
-  name: "album-list"
+  name: "album-list",
+  emits: ['selection'],
+   props: {
+    currentalbum: {
+      required:true,
+      type: Object as PropType<IAlbum>
+    }
+  },
+  data() {
+	return {
+		albums : albumsJson.album as Array<IAlbum>
+	}
+  },
+  methods: {
+	setSelection(album:IAlbum):void{
+		this.$emit('selection',album)
+	}
+  }
 });
 </script>
 

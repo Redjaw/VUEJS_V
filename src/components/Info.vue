@@ -1,25 +1,55 @@
 <template>
 	<div class="row h-100 d-flex align-items-center">
-        <div class="col-1 text-center">
-            <i class="fas fa-backward fa-3x"></i>
-        </div>
-      <div class="col text-center">
-        <h2>A Night at the Opera</h2>
-        <h3><a href="https://it.wikipedia.org/wiki/Queen" target="_blank">Queen</a></h3>
-        <h4>1975</h4>
-        <h5>00:00 / 43:08</h5>
+      <div class="col-1 text-center">
+          <i class="fas fa-backward fa-3x"></i>
       </div>
+      
+      <div class="col text-center" v-if="album.name">
+        <h2>
+          <a v-if="album.link" :href="album.link">{{album.name}}</a>
+          <span v-if="!album.link">{{album.name}}</span>
+        </h2>
+        <h3>
+          <a v-if="album.author && album.author.link" :href="album.author.link" target="_blank">{{album.author.name}}</a>
+          <span v-if="!album.author">{{album.author.name}}</span>
+        </h3>
+        <h4>{{album.year}}</h4>
+        <h5>00:00 / {{returnDuration(album.duration)}}</h5>
+      </div>
+
       <div class="col-1 text-center">
         <i class="fas fa-forward fa-3x"></i>
-    </div>
+      </div>
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+
+import { defineComponent, PropType} from 'vue'
+import timeHelper from '../helpers/timeHelper'
+import {IAlbum} from './Album'
 
 export default defineComponent({
-  name: "info"
+  name: "info",
+  props: {
+    album: {
+      required:true,
+      type: Object as PropType<IAlbum>
+    }
+  },
+  data(){
+    return{
+      selectedAlbum: {} as IAlbum
+    }
+  },
+  mounted(){
+    this.selectedAlbum = this.album
+  },
+  methods: {
+    returnDuration(duration:number|string):string{
+      return typeof duration === 'string' ? duration : timeHelper.millisToMinutesAndSeconds(duration)
+    }
+  }
 });
 </script>
 
