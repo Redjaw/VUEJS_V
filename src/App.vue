@@ -1,32 +1,25 @@
 <template>
-  <div class="container d-flex flex-column">
-    <div class="row flex-fill">
-      <div class="col-3">
-        <ListaOggetti ></ListaOggetti>
-      </div>
-      <div class="col-9">
-        <DettaglioOggetto></DettaglioOggetto>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <Carrello></Carrello>
-      </div>
+<div class="p-grid p-m-0 p-nested-grid p-flex p-flex-column p-jc-between" style="height: 100%;">
+	<div class="p-col-12">
+    <div class="p-grid">
+      <ListaOggetti ></ListaOggetti>
     </div>
   </div>
+	<div class="p-col-12">
+    <Carrello></Carrello>
+  </div>
+</div>
   
 </template>
 
 <script>
 import ListaOggetti from '@/components/ListaOggetti'
-import DettaglioOggetto from '@/components/DettaglioOggetto'
 import Carrello from '@/components/Carrello'
 
 export default {
   name: 'App',
   components: {
     ListaOggetti,
-    DettaglioOggetto,
     Carrello
   }
 }
@@ -36,12 +29,12 @@ export default {
 html, body {
 	width: 100%;
 	height: 100%;
+  padding: 0;
+  margin: 0;
 }
 #app {
   width: 100%;
   height: 100%;
-  .container {
-    height: 100%;
-  }
+  background-color: #ccc;
 }
 </style>

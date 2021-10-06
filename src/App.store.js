@@ -1,14 +1,12 @@
 import { createStore } from 'vuex'
+import myCarrelloStore from '@/carrelloStore.js'
+import myUserStore from '@/userStore.js'
 
 const store = createStore({
-	state() {
-        return {
-            test: 'ciao'
-		}
-    },
-    getters: {},
-	actions: {},
-    mutations: {}
+    modules: {
+        cart: myCarrelloStore,
+        user: myUserStore
+    }
 })
 
 export default store

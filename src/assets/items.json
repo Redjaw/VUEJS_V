@@ -27,19 +27,19 @@
       "id":"1238",
       "name":"Spazzolino elettrico ricaricabile",
       "description":"Spazzolino Elettrico Ricaricabile, 1 Spazzolino con Sensore di Pressione dello Spazzolamento Visibile, 1 Testina, 1 Custodia da Viaggio",
-      "price": 39.99
+      "price": 39
     },
     {
       "id":"1239",
       "name":"Tostapane",
       "description":"Tostapane a 2 fette, 7 impostazioni di tostatura, Funzioni di sgelare, riscaldamento e cancellazione; 750W, Nero, BPA Free",
-      "price": 21.99
+      "price": 21
     },
     {
       "id":"1205",
       "name":"Bilancia digitale",
       "description":"Bilancia digitale da cucina, in acciaio inossidabile, pesa in grammi e once, 5 kg / 1 g , garanzia 15 anni",
-      "price": 12.99
+      "price": 12
     }
   ]
 }
