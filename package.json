@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "fastify": "^3.22.0",
+    "fastify-env": "^2.1.1",
+    "uuidv4": "^6.2.12",
     "vue": "^3.0.0"
   },
   "devDependencies": {

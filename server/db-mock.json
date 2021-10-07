@@ -1,0 +1,168 @@
+{
+  "matches": [
+    {
+      "id": "69c27606-a1e6-4efe-9436-13635062a61d",
+      "date": 1628760329629,
+      "team1": [
+        "40a1e568-de51-4506-902c-f16e95fa0930",
+        "40e62e15-e4dc-4188-848e-8e089c20f2b6"
+      ],
+      "team2": [
+        "1842d383-c8c5-4e1c-b5dc-1b0666932c6d",
+        "41f8289b-4fe7-4688-b6d2-1108b883e598"
+      ],
+      "score": [
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "id": "dd476c88-c92b-4d79-994c-952a8a8960d4",
+      "date": 1633621180932,
+      "team1": [
+        "516715cb-f18f-4cd0-8b67-82b13425ee21",
+        "37d761b8-fc64-452f-8db8-f05602668859"
+      ],
+      "team2": [
+        "32668cac-b2cf-48d0-97b1-03e2b146ff5b",
+        "4268e89e-94b1-44aa-92f8-b91d30adf2e0"
+      ],
+      "score": [
+        [
+          6,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "notes": "Bella Partita!"
+    },
+    {
+      "id": "93da9f52-3a68-4224-b273-5b53f6d82ab9",
+      "date": 1633621467881,
+      "team1": [
+        "40e62e15-e4dc-4188-848e-8e089c20f2b6",
+        "1842d383-c8c5-4e1c-b5dc-1b0666932c6d"
+      ],
+      "team2": [
+        "b57589fb-d6df-4ff2-aa06-6def110015ac",
+        "40a1e568-de51-4506-902c-f16e95fa0930"
+      ],
+      "score": [
+        [
+          4,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "notes": "Eravate troppo forti!"
+    },
+    [
+      {
+        "id": "c1946f1a-6de6-4eed-ab4d-3c7c5145a142",
+        "date": 1622982600000,
+        "team1": [
+          "37d761b8-fc64-452f-8db8-f05602668859",
+          "40a1e568-de51-4506-902c-f16e95fa0930"
+        ],
+        "team2": [
+          "32668cac-b2cf-48d0-97b1-03e2b146ff5b",
+          "8abf9d28-4889-4471-b326-ec9be288d3bd"
+        ],
+        "score": [
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "notes": "test"
+      }
+    ]
+  ],
+  "players": [
+    {
+      "id": "40a1e568-de51-4506-902c-f16e95fa0930",
+      "name": "marco de marchi",
+      "role": "player"
+    },
+    {
+      "id": "40e62e15-e4dc-4188-848e-8e089c20f2b6",
+      "name": "mirko dalle marche",
+      "role": "player"
+    },
+    {
+      "id": "1842d383-c8c5-4e1c-b5dc-1b0666932c6d",
+      "name": "luigi bentivoglio",
+      "role": "player"
+    },
+    {
+      "id": "41f8289b-4fe7-4688-b6d2-1108b883e598",
+      "name": "mario rossi",
+      "role": "player"
+    },
+    {
+      "id": "32668cac-b2cf-48d0-97b1-03e2b146ff5b",
+      "name": "francesco torti",
+      "role": "player"
+    },
+    {
+      "id": "37d761b8-fc64-452f-8db8-f05602668859",
+      "name": "ciccio ingrassai",
+      "role": "player"
+    },
+    {
+      "id": "516715cb-f18f-4cd0-8b67-82b13425ee21",
+      "name": "davide vernassa",
+      "role": "player"
+    },
+    {
+      "id": "b57589fb-d6df-4ff2-aa06-6def110015ac",
+      "name": "elena de elenis",
+      "role": "player"
+    },
+    {
+      "id": "8abf9d28-4889-4471-b326-ec9be288d3bd",
+      "name": "pina pinelli",
+      "role": "player"
+    },
+    {
+      "id": "4268e89e-94b1-44aa-92f8-b91d30adf2e0",
+      "name": "pina sinalefe",
+      "role": "player"
+    },
+    {
+      "id": "c79fdf47-8810-487a-9716-8f30ff6e63a8",
+      "name": "gabriele impassibilis",
+      "role": "judge"
+    },
+    {
+      "id": "cdd8f6bb-6b66-4718-af1f-0538d10ffb87",
+      "name": "loretta von decision",
+      "role": "judge"
+    }
+  ]
+}
