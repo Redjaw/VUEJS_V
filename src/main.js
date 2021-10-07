@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import ValidatePlugin from '@/plugins/ValidatePlugin.js'
 import './assets/bootstrap.min.css'
+import ValidatorPlugin from '@/plugins/validatorPlugin.js'
 
 
 createApp(App)
-    .use(ValidatePlugin)
+    .use(ValidatorPlugin)
     .mount('#app')
