@@ -45,8 +45,7 @@ fastify.put('/api/matches:id', async (request, reply) => {
         for (var k in db.matches) {
             if (db.matches[k].id === request.query.id) {
                 let reqBody = request.body
-                db.matches.splice(k, 1)
-                db.matches.push(reqBody)
+                db.matches[k] = reqBody
                 writeDb().then((response)=> reply.code(201).send())
             }
         }
